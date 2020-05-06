@@ -28,7 +28,7 @@ namespace Task1
                 throw new InvalidOperationException();
             this.array[this.tail] = element;
             this.tail = (this.tail + 1) % this.array.Length;
-            if (isEmpty())
+            if (this.tail == 0)
                 this.isLooped = true;
         }
 
@@ -38,7 +38,7 @@ namespace Task1
                 throw new InvalidOperationException();
             T element = this.array[this.head];
             this.head = (this.head + 1) % this.array.Length;
-            if (isFull())
+            if (this.head == 0)
                 this.isLooped = false;
             return element;
         }
