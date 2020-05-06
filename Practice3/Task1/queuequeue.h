@@ -60,7 +60,7 @@ public:
 			throw out_of_range("queue is full");
 		this->array[this->tail] = element;
 		this->tail = (this->tail + 1) % this->size;
-		if (isEmpty())
+		if (this->tail == 0)
 			this->isLooped = true;
 	}
 
@@ -71,7 +71,7 @@ public:
 			throw out_of_range("queue is empty");
 		T element = this->array[this->head];
 		this->head = (this->head + 1) % this->size;
-		if (isFull())
+		if (this->head == 0)
 			this->isLooped = false;
 		return element;
 	}
