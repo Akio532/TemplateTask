@@ -22,10 +22,13 @@ private:
 	T* array;
 	int head, tail;
 	bool isLooped;
+	
+public:
+	
+	
 	bool isFull() { return this->head == this->tail && this->isLooped; }
 	bool isEmpty() { return this->head == this->tail && !this->isLooped; }
 
-public:
 
 	
 
