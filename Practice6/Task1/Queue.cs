@@ -12,8 +12,8 @@ namespace Task1
         int head, tail;
         bool isLooped;
 
-        bool isFull() => this.head == this.tail && this.isLooped;
-        bool isEmpty() => this.head == this.tail && !this.isLooped;
+       public bool isFull() => this.head == this.tail && this.isLooped;
+       public bool isEmpty() => this.head == this.tail && !this.isLooped;
 
         public Queue(int size)
         {
