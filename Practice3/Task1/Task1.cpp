@@ -17,7 +17,7 @@ int main()
 	queue2.push(5);
 	queue2.push(6);
 	Queue<int> queue3 = queuing(queue1, queue2);
-	for (int i = 0; i < 5; i++)
+	for (!queue3.isEmpty())
 		cout << queue3.pop() << endl;
 	return 0;
     //std::cout << "Hello World!\n";
