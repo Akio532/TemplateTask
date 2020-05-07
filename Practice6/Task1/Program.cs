@@ -18,7 +18,7 @@ namespace Task1
                 queue2.Push(i);
             Queue<int> queue3 = Queue<int>.queuing(queue1, queue2);
             queue1.Pop();
-            for (int i = 0; i < 9; i++)
+            for (!queue3.isEmpty())
                 Console.WriteLine("{0} ", queue3.Pop());
         }
     }
